@@ -1,0 +1,8 @@
+@anno1
+@anno2
+table foobar {
+  @fieldanno1
+  @fieldanno2
+  key bla: UUID
+  super:Integer
+}
