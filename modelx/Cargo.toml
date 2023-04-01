@@ -1,0 +1,12 @@
+[package]
+name = "modelx"
+version = "0.1.0"
+description = "Compiler for Modelx files"
+edition = "2021"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pest = "2.5.4"
+pest_derive = "2.5.4"

@@ -1,0 +1,17 @@
+[package]
+name = "testx"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.6.4"
+modelx = { version = "0.1.0", path = "../modelx" }
+handlerx = { version = "0.1.0", path = "../handlerx" }
+servex = { version = "0.1.0", path = "../servex" }
+serde = { version = "1.0.152", features = ["derive"] }
+sqlx = { version = "0.6.2", features = ["postgres", "runtime-tokio-rustls"] }
+tokio = { version = "1.25.0", features = ["full"] }
+surrealdb = "1.0.0-beta.8"
+async-trait = "0.1.66"

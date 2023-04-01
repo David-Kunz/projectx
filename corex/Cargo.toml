@@ -1,0 +1,16 @@
+[package]
+name = "corex"
+version = "0.1.0"
+edition = "2021"
+description = "Core functions for Servex"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.6.7"
+modelx = { version = "0.1.0", path = "../modelx" }
+handlerx = { version = "0.1.0", path = "../handlerx" }
+proc-macro2 = "1.0.51"
+quote = "1.0.23"
+syn = "1.0.107"

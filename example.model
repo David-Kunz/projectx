@@ -1,0 +1,13 @@
+@http
+@db
+table Foo { 
+  key id: Integer
+  bla: String
+}
+
+@http
+@db
+table Bar { 
+  key xx: Integer
+  yy: UUID
+}
