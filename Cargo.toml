@@ -1,0 +1,8 @@
+[workspace]
+
+members = [
+    "corex",
+    "modelx",
+    "servex",
+    "testx"
+]
