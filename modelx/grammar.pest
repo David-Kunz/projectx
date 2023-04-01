@@ -1,0 +1,10 @@
+WHITESPACE = _{ " " | "\t" | "\r" | "\n" }
+alpha = { 'a'..'z' | 'A'..'Z' }
+digit = { '0'..'9' }
+is_key = { ("key")? }
+field_type = { ("String" | "UUID" | "Integer") }
+ident = @{ alpha ~ (alpha | digit)+ }
+annotation = @{ "@" ~ ident } 
+field = { (annotation)* ~ is_key ~ ident ~ ":" ~ field_type }
+table = { (annotation)* ~ "table" ~ ident ~ "{" ~ (field)* ~ "}" }
+file = { SOI ~ (table)* ~  EOI }
